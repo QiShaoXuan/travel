@@ -4,7 +4,7 @@
       v-for="(item,index) in tableData" :key="index"
       :data="item.data"
       style="width: 33%">
-      <el-table-column :label="item.from" align="center">
+      <el-table-column :label='`${item.from} 至 ${item.to} (单程)`' align="center">
         <el-table-column
           prop="start_time"
           label="出发时间"
@@ -32,29 +32,29 @@
 </template>
 
 <script>
-  const pujiBeijing928_105 = require('../assets/mangu/9.28 - 10.5 beijing to mangu')
-  const pujiShenzhen928_105 = require('../assets/mangu/9.28 - 10.5 shenzhen to mangu')
-  const pujiShanghai928_105 = require('../assets/mangu/9.28 - 10.5 shanghai to mangu')
+  const manguBeijing928_105 = require('../assets/mangu/9.28 - 10.5 beijing to mangu')
+  const manguShenzhen928_105 = require('../assets/mangu/9.28 - 10.5 shenzhen to mangu')
+  const manguShanghai928_105 = require('../assets/mangu/9.28 - 10.5 shanghai to mangu')
 
   export default {
-    name: 'HelloWorld',
+    name: 'mangu',
     data() {
       return {
         tableData: [
           {
             from: '北京',
-            to: '普吉岛',
-            data: pujiBeijing928_105
+            to: '曼谷',
+            data: manguBeijing928_105
           },
           {
             from: '上海',
-            to: '普吉岛',
-            data: pujiShanghai928_105
+            to: '曼谷',
+            data: manguShanghai928_105
           },
           {
             from: '深圳',
-            to: '普吉岛',
-            data: pujiShenzhen928_105
+            to: '曼谷',
+            data: manguShenzhen928_105
           }
         ]
       }

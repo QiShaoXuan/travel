@@ -6,7 +6,7 @@ const json = [];
     flight: table.querySelector('.flight-info div p').innerText,
     start_time: '',
     end_time: '',
-    price: table.querySelector('.price-num').innerText.replace('往返含税￥',''),
+    price: table.querySelector('.price-num').innerText.replace('含税￥',''),
   }
   const times = table.querySelectorAll('.time-info')
   times.forEach((time, index) => {

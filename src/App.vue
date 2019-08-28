@@ -1,15 +1,14 @@
 <template>
   <div id="app">
+    <!--<router-link to="/">-->
+      <!--<el-button :type="isActive('/')">9.28 ~ 10.05 至普吉岛-->
+      <!--</el-button>-->
+    <!--</router-link>-->
     <router-link to="/">
-      <el-button :type="isActive('/')">9.28 ~ 10.05 至普吉岛
-      </el-button>
-    </router-link>
-    <router-link to="/mangu">
       <el-button
-        :type="isActive('/mangu')">9.28 ~ 10.05 至曼谷
+        :type="isActive('/')">9.28 ~ 10.05 至曼谷
       </el-button>
     </router-link>
-
 
     <router-view/>
   </div>
